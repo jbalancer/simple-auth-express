@@ -1,0 +1,26 @@
+@apiUrl = http://localhost:8080/api/
+
+# UserController.pingPublicAccess
+GET {{apiUrl}}ping/public
+Content-Type: application/json
+
+###
+
+# UserController.pingUserAccess
+GET {{apiUrl}}ping/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNjUwMTkxNzgyLCJleHAiOjE2NTAyNzgxODJ9.EFvnqnIM2hrovHNtNT37pgX1j-rkJ-IWSKn4e8weAr0
+
+###
+
+# UserController.pingModeratorAccess
+GET {{apiUrl}}ping/moderator
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNjUwMTkxNzgyLCJleHAiOjE2NTAyNzgxODJ9.EFvnqnIM2hrovHNtNT37pgX1j-rkJ-IWSKn4e8weAr0
+
+###
+
+# UserController.pingAdminAccess
+GET {{apiUrl}}ping/admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNjUwMTkxNzgyLCJleHAiOjE2NTAyNzgxODJ9.EFvnqnIM2hrovHNtNT37pgX1j-rkJ-IWSKn4e8weAr0

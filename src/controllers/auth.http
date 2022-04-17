@@ -1,0 +1,27 @@
+@apiUrl = http://localhost:8080/api/
+
+# AuthController.signIn
+POST {{apiUrl}}auth/signin
+Content-Type: application/json
+
+{
+	"username": "test1",
+	"password": "test"
+}
+
+###
+
+# AuthController.signUp
+POST {{apiUrl}}auth/signup
+Content-Type: application/json
+
+{
+	"username": "admin",
+	"password": "test",
+	"email": "admin@test.test",
+	"roles": [
+		"USER",
+		"ADMIN",
+		"MODERATOR"
+	]
+}
